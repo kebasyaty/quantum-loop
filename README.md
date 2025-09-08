@@ -46,6 +46,8 @@
 
 ##
 
+<br>
+
 ## Documentation
 
 Online browsable documentation is available at [https://kebasyaty.github.io/quantum-loop/](https://kebasyaty.github.io/quantum-loop/ "Documentation").
