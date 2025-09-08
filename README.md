@@ -8,7 +8,7 @@
     </a>
   </p>
   <p>
-    <h1>Quantum Loop</h1>
+    <h1>quantum loop</h1>
     <h3>A set of tools for quantum calculations.</h3>
     <p align="center">
       <a href="https://github.com/kebasyaty/quantum-loop/actions/workflows/test.yml" alt="Build Status"><img src="https://github.com/kebasyaty/quantum-loop/actions/workflows/test.yml/badge.svg" alt="Build Status"></a>
