@@ -1,5 +1,7 @@
 """Test Stub."""
 
+from __future__ import annotations
+
 
 class TestNegative:
     """Negative tests."""

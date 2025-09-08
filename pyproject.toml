@@ -7,7 +7,7 @@ authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.12,<4.0"
-keywords = ["quantum"]
+keywords = ["qubit", "quantum", "loop"]
 classifiers = [
     "Development Status :: 4 - Beta",
     # "Development Status :: 5 - Production/Stable",
@@ -22,7 +22,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: Implementation :: CPython",
     # "Programming Language :: Python :: Implementation :: PyPy",
-    "Topic :: Database", # <------------------------------------------ ???
+    "Topic :: Software Development :: Libraries",
     "Typing :: Typed",
 ]
 dependencies = []
@@ -49,11 +49,7 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = []
-lint = [
-    "mypy>=1.17.1",
-    "pre-commit>=4.3.0",
-    "ruff>=0.12.12",
-]
+lint = ["mypy>=1.17.1", "pre-commit>=4.3.0", "ruff>=0.12.12"]
 test = [
     "pytest>=8.4.2",
     "pytest-asyncio>=1.1.0",

@@ -9,7 +9,7 @@
   </p>
   <p>
     <h1>quantum</h1>
-    <h3>???</h3>
+    <h3>A set of tools for quantum calculations.</h3>
     <p align="center">
       <a href="https://github.com/kebasyaty/quantum/actions/workflows/test.yml" alt="Build Status"><img src="https://github.com/kebasyaty/quantum/actions/workflows/test.yml/badge.svg" alt="Build Status"></a>
       <a href="https://kebasyaty.github.io/quantum/" alt="Docs"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Docs"></a>
@@ -31,7 +31,13 @@
       <a href="https://github.com/kebasyaty/quantum/releases/" alt="GitHub release"><img src="https://img.shields.io/github/release/kebasyaty/quantum" alt="GitHub release"></a>
     </p>
     <p align="center">
-      ???
+      A Qubit in a regular computer is quantum of algorithm that is executed in
+      one iteration of a cycle in a separate processor thread.
+      <br>
+      Quantum is a function with an algorithm of task for data processing.
+      <br>
+      In this case, the Qubit is not a single information,
+      but it is a concept of the principle of operation of quantum calculations on a regular computer.
     </p>
   </p>
 </div>
@@ -51,8 +57,6 @@ uv add quantum
 ```
 
 ## Usage
-
-[It is recommended to look at examples here](https://github.com/kebasyaty/quantum/tree/main/examples "Examples").
 
 ```python
 import quantum
