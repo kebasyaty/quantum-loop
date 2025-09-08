@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://kebasyaty.github.io/quantum/0.1/</loc>
+         <loc>https://kebasyaty.github.io/quantum-loop/0.1/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://kebasyaty.github.io/quantum/0.1/pages/installation/</loc>
+         <loc>https://kebasyaty.github.io/quantum-loop/0.1/pages/details/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://kebasyaty.github.io/quantum/0.1/pages/loop/</loc>
+         <loc>https://kebasyaty.github.io/quantum-loop/0.1/pages/installation/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://kebasyaty.github.io/quantum/0.1/pages/usage/</loc>
+         <loc>https://kebasyaty.github.io/quantum-loop/0.1/pages/usage/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
 </urlset>
