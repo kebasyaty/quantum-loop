@@ -1,4 +1,4 @@
-"""Testing a `Quantum` module."""
+"""Testing a Quantum Loop module."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ from quantum_loop import LoopMode, QuantumLoop
 
 
 class TestQuantumLoop:
-    """Testing a `QuantumLoop` class."""
+    """Testing a QuantumLoop class."""
 
     @staticmethod
     def control_sample() -> list[int]:
