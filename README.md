@@ -32,6 +32,7 @@
     </p>
     <p align="center">
       A Qubit in a regular computer is quantum of algorithm that is executed in
+      <br>
       one iteration of a cycle in a separate processor thread.
       <br>
       Quantum is a function with an algorithm of task for data processing.
