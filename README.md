@@ -75,7 +75,7 @@ data = range(10)
 
 # Separation of the cycle into quantum algorithms for
 # multiprocessing data processing.
-results = quantum-loopLoop(task, data).run()
+results = QuantumLoop(task, data).run()
 print(results)  # => [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
