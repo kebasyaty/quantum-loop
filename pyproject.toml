@@ -1,13 +1,13 @@
 [project]
-name = "quantum"
+name = "quantum-loop"
 version = "0.1.0"
-description = "???"
+description = "A set of tools for quantum calculations."
 readme = "README.md"
 authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.12,<4.0"
-keywords = ["qubit", "quantum", "loop"]
+keywords = ["qubit", "quantum", "loop", "quantum-loop"]
 classifiers = [
     "Development Status :: 4 - Beta",
     # "Development Status :: 5 - Production/Stable",
@@ -28,11 +28,11 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/kebasyaty/quantum"
-Repository = "https://github.com/kebasyaty/quantum"
-Source = "https://github.com/kebasyaty/quantum"
-"Bug Tracker" = "https://github.com/kebasyaty/quantum/issues"
-Changelog = "https://github.com/kebasyaty/quantum/blob/v0/CHANGELOG.md"
+Homepage = "https://github.com/kebasyaty/quantum-loop"
+Repository = "https://github.com/kebasyaty/quantum-loop"
+Source = "https://github.com/kebasyaty/quantum-loop"
+"Bug Tracker" = "https://github.com/kebasyaty/quantum-loop/issues"
+Changelog = "https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md"
 
 [tool.uv]
 package = true

@@ -1,10 +1,10 @@
-site_name: Quantum Docs
-site_description: "???"
-site_url: https://kebasyaty.github.io/quantum/
+site_name: Quantum Loop Docs
+site_description: "A set of tools for quantum calculations."
+site_url: https://kebasyaty.github.io/quantum-loop/
 site_author: Kebasyaty
 copyright: Copyright &copy; 2025 Maintained by <a href="https://github.com/kebasyaty">Kebasyaty</a>
-repo_name: kebasyaty/quantum
-repo_url: https://github.com/kebasyaty/quantum
+repo_name: kebasyaty/quantum-loop
+repo_url: https://github.com/kebasyaty/quantum-loop
 
 theme:
   name: material
@@ -68,7 +68,7 @@ extra:
       link: https://twitter.com
 
 nav:
-  - Quantum: index.md
+  - Quantum Loop: index.md
   - Installation: pages/installation.md
   - Usage: pages/usage.md
-  - Details: pages/loop.md
+  - Details: pages/details.md

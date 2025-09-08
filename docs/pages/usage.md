@@ -1,5 +1,5 @@
 ```python
-from quantum import LoopMode, QuantumLoop, count_qubits
+from quantum_loop import LoopMode, QuantumLoop, count_qubits
 
 # Counting the number of conceptual qubits of your computer.
 num = count_qubits()
