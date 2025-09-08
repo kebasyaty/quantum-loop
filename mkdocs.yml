@@ -1,0 +1,71 @@
+site_name: Quantum Docs
+site_description: "???"
+site_url: https://kebasyaty.github.io/quantum/
+site_author: Kebasyaty
+copyright: Copyright &copy; 2025 Maintained by <a href="https://github.com/kebasyaty">Kebasyaty</a>
+repo_name: kebasyaty/quantum
+repo_url: https://github.com/kebasyaty/quantum
+
+theme:
+  name: material
+  language: en
+  custom_dir: docs/overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+
+extra_css:
+  - custom_style/github_black.css
+
+plugins:
+  - search
+  - tags:
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+extra:
+  version:
+    provider: mike
+    default: latest
+    alias: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kebasyaty
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com
+
+nav:
+  - Quantum: index.md

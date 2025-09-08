@@ -1,0 +1,37 @@
+<svg width="150" height="150" version="1.1" viewBox="0 0 4.5 4.5" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1{fill:#4285f4;}.cls-2{fill:#669df6;}</style>
+ </defs>
+ <title>Icon_24px_TPU_Color</title>
+ <g transform="matrix(.25 0 0 .25 -.75 -.75)" data-name="Product Icons">
+  <g data-name="colored-32/TPU">
+   <path class="cls-1" d="m6.48 9.62a0.37084 0.37084 0 1 1-0.05-0.74l2.3-0.32a0.37 0.37 0 0 1 0.42 0.32 0.38 0.38 0 0 1-0.32 0.43l-2.3 0.31z"/>
+   <rect class="cls-1" transform="rotate(-71.93 11.488 9.6088)" x="11.11" y="7.43" width=".75" height="4.36"/>
+   <path class="cls-1" d="m9.18 9.16h-0.11a0.37 0.37 0 0 1-0.24-0.46l0.83-2.84a0.37 0.37 0 0 1 0.46-0.24 0.36 0.36 0 0 1 0.26 0.45l-0.84 2.81a0.38 0.38 0 0 1-0.36 0.28z" data-name="Shape"/>
+   <path class="cls-1" d="m14.31 10.56a0.36 0.36 0 0 1-0.31-0.17 0.36 0.36 0 0 1 0-0.39l1.67-4.23a0.38 0.38 0 0 1 0.47-0.18 0.38 0.38 0 0 1 0.23 0.45l-1.68 4.24a0.39 0.39 0 0 1-0.38 0.28z" data-name="Shape"/>
+   <rect class="cls-1" transform="rotate(-38.61 7.8701 15.321)" x="5.35" y="14.95" width="5.03" height=".75" data-name="Rectangle-path"/>
+   <polygon class="cls-1" points="17.75 12.29 14.12 10.71 14.41 10.02 18.05 11.61" data-name="Rectangle-path"/>
+   <polygon class="cls-1" points="17.22 17.63 13.99 14.59 14.51 14.04 17.74 17.09" data-name="Rectangle-path"/>
+   <rect class="cls-1" transform="rotate(-11.48 9.5453 11.008)" x="9.18" y="9" width=".75" height="4.06" data-name="Rectangle-path"/>
+   <polygon class="cls-1" points="10.46 14.16 9.96 13.6 14.06 10 14.56 10.56" data-name="Rectangle-path"/>
+   <polygon class="cls-1" points="14.49 14.27 13.75 14.22 13.99 10.25 14.74 10.3" data-name="Rectangle-path"/>
+   <circle id="Oval" class="cls-1" cx="10.01" cy="13.82" r="1.36"/>
+   <circle class="cls-1" cx="14.37" cy="10.36" r="1.61" data-name="Oval"/>
+   <circle class="cls-1" cx="14.36" cy="14.54" r=".84" data-name="Oval"/>
+   <circle class="cls-1" cx="9.04" cy="8.67" r=".99" data-name="Oval"/>
+  </g>
+  <polygon class="cls-2" points="13 7 13 3 11 3 11 7"/>
+  <polygon class="cls-2" points="17 7 17 3 15 3 15 7"/>
+  <polygon class="cls-2" points="9 7 9 3 7 3 7 7"/>
+  <polygon class="cls-2" points="13 21 13 17 11 17 11 21"/>
+  <polygon class="cls-2" points="17 21 17 17 15 17 15 21"/>
+  <polygon class="cls-2" points="9 21 9 17 7 17 7 21"/>
+  <polygon class="cls-2" points="7 13 7 11 3 11 3 13"/>
+  <polygon class="cls-2" points="7 9 7 7 3 7 3 9"/>
+  <polygon class="cls-2" points="7 17 7 15 3 15 3 17"/>
+  <polygon class="cls-2" points="21 13 21 11 17 11 17 13"/>
+  <polygon class="cls-2" points="21 9 21 7 17 7 17 9"/>
+  <polygon class="cls-2" points="21 17 21 15 17 15 17 17"/>
+  <path class="cls-2" d="m18 5h-12a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1zm-1 11.47a0.53 0.53 0 0 1-0.53 0.53h-8.94a0.53 0.53 0 0 1-0.53-0.53v-8.94a0.53 0.53 0 0 1 0.53-0.53h8.94a0.53 0.53 0 0 1 0.53 0.53z"/>
+ </g>
+</svg>
