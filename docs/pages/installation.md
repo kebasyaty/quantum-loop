@@ -1,3 +1,3 @@
 ```shell
-uv add quantum_loop
+uv add quantum-loop
 ```
