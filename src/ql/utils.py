@@ -14,7 +14,7 @@ def count_qubits() -> int:
     Quantum of algorithm is a function for data processing.
 
     Examples:
-        >>> from xloft.quantum import count_qubits
+        >>> from ql import count_qubits
         >>> count_qubits()
         16
 

@@ -34,7 +34,7 @@ class QuantumLoop:
     """Separation of the cycle into quantum algorithms for multiprocessing data processing.
 
     Examples:
-        >>> from xloft.quantum import QuantumLoop
+        >>> from ql import QuantumLoop
         >>> def task(item):
         ... return item * item
         >>> data = range(10)
