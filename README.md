@@ -65,7 +65,7 @@ uv add quantum-loop
 ## Usage
 
 ```python
-from quantum_loop import LoopMode, QuantumLoop, count_qubits
+from ql import LoopMode, QuantumLoop, count_qubits
 
 # Counting the number of conceptual qubits of your computer.
 num = count_qubits()

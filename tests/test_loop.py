@@ -1,8 +1,8 @@
-"""Testing a Quantum Loop module."""
+"""Testing a Loop module."""
 
 from __future__ import annotations
 
-from quantum_loop import LoopMode, QuantumLoop
+from ql import LoopMode, QuantumLoop
 
 
 class TestQuantumLoop:

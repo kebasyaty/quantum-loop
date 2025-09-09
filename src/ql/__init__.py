@@ -17,4 +17,6 @@ __all__ = (
     "count_qubits",
 )
 
-from quantum_loop.loop import LoopMode, QuantumLoop, count_qubits
+
+from ql.loop import LoopMode, QuantumLoop
+from ql.utils import count_qubits
