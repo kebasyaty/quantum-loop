@@ -32,7 +32,7 @@
 
 <hr>
 
-::: quantum_loop
+::: ql
     options:
       members: no
 

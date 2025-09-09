@@ -71,4 +71,5 @@ nav:
   - Quantum Loop: index.md
   - Installation: pages/installation.md
   - Usage: pages/usage.md
-  - Details: pages/details.md
+  - Loop: pages/loop.md
+  - Utils: pages/utils.md
