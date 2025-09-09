@@ -43,6 +43,9 @@ check-url = "https://pypi.org/simple"
 [tool.uv.build-backend]
 module-root = "src"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/ql"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
