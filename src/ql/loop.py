@@ -18,7 +18,6 @@ The module contains the following tools:
 from __future__ import annotations
 
 import concurrent.futures
-import multiprocessing
 from collections.abc import Callable, Iterable
 from enum import Enum
 from typing import Any, Never, assert_never
@@ -29,25 +28,6 @@ class LoopMode(Enum):
 
     PROCESS_POOL = 1
     THREAD_POOL = 2
-
-
-def count_qubits() -> int:
-    """Counting the number of conceptual qubits of your computer.
-
-    Conceptual qubit is quantum of algorithm (task) that is executed in
-    iterations of a cycle in a separate processor thread.
-
-    Quantum of algorithm is a function for data processing.
-
-    Examples:
-        >>> from xloft.quantum import count_qubits
-        >>> count_qubits()
-        16
-
-    Returns:
-        The number of conceptual qubits.
-    """
-    return multiprocessing.cpu_count()
 
 
 class QuantumLoop:
