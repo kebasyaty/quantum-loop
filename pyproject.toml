@@ -1,6 +1,6 @@
 [project]
 name = "quantum-loop"
-version = "0.1.3"
+version = "0.2.0"
 description = "A set of tools for quantum calculations."
 readme = "README.md"
 authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
