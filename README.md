@@ -78,10 +78,9 @@ def main() -> None:
     num = count_qubits()
     print(num)  # => 16
 
-    data = range(10)
-
     # Separation of the cycle into quantum algorithms for
     # multiprocessing data processing.
+    data = range(10)
     results = QuantumLoop(task, data).run()
     print(results)  # => [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
