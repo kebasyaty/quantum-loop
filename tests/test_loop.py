@@ -7,9 +7,10 @@ from ql import LoopMode, QuantumLoop
 
 def task(num: int) -> int | None:
     """Test Quantum."""
+    result = None
     if num % 2 == 0:
-        return num * num
-    return None
+        result = num * num
+    return result
 
 
 class TestQuantumLoop:
