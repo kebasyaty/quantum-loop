@@ -604,11 +604,11 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 <p><span class="doc-section-title">Examples:</span></p>
     <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">ql</span><span class="w"> </span><span class="kn">import</span> <span class="n">QuantumLoop</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
-<span class="gp">... </span><span class="k">return</span> <span class="n">item</span> <span class="o">*</span> <span class="n">item</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gp">... </span><span class="k">return</span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">QuantumLoop</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-<span class="go">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span>
+<span class="go">[4, 16, 36, 64]</span>
 </code></pre></div>
 
 
@@ -799,11 +799,11 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 <span class="sd">    Examples:</span>
 <span class="sd">        &gt;&gt;&gt; from ql import QuantumLoop</span>
-<span class="sd">        &gt;&gt;&gt; def task(item):</span>
-<span class="sd">        ... return item * item</span>
-<span class="sd">        &gt;&gt;&gt; data = range(10)</span>
+<span class="sd">        &gt;&gt;&gt; def task(num: int) -&gt; int | None:</span>
+<span class="sd">        ... return num * num if num % 2 == 0 else None</span>
+<span class="sd">        &gt;&gt;&gt; data = range(1, 10)</span>
 <span class="sd">        &gt;&gt;&gt; QuantumLoop(task, data).run()</span>
-<span class="sd">        [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span>
+<span class="sd">        [4, 16, 36, 64]</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        task: Function with a task algorithm.</span>
