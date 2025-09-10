@@ -1,8 +1,22 @@
-"""Utils."""
+"""Utils.
+
+The module contains the following tools:
+
+- `LoopMode` - Quantum loop mode.
+- `count_qubits()` - Counting the number of conceptual qubits of your computer.
+"""
 
 from __future__ import annotations
 
 import multiprocessing
+from enum import Enum
+
+
+class LoopMode(Enum):
+    """Quantum loop mode."""
+
+    PROCESS_POOL = 1
+    THREAD_POOL = 2
 
 
 def count_qubits() -> int:

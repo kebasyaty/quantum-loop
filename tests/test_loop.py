@@ -5,35 +5,42 @@ from __future__ import annotations
 from ql import LoopMode, QuantumLoop
 
 
+def task(num: int) -> int | None:
+    """Test Quantum."""
+    return num * num if num % 2 == 0 else None
+
+
 class TestQuantumLoop:
     """Testing a QuantumLoop class."""
 
     @staticmethod
-    def control_sample() -> list[int]:
-        """Control sample."""
-        return [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    def data():
+        """Test Data."""
+        return range(1, 10)
 
     @staticmethod
-    def task(item: int) -> int:
-        """Test Quantum."""
-        return item * item
+    def control_sample() -> list[int]:
+        """Control sample of results."""
+        return [4, 16, 36, 64]
 
     def test_process_pool(self) -> None:
         """Testing a `process_pool` method."""
-        data = range(10)
-        results = QuantumLoop(self.task, data).run()
+        data = self.data()
+        results = QuantumLoop(task, data).run()
+        assert len(results) == 4
         control_sample = self.control_sample()
         for num in results:
             assert num in control_sample
 
     def test_thread_pool(self) -> None:
         """Testing a `thread_pool` method."""
-        data = range(10)
+        data = self.data()
         results = QuantumLoop(
-            self.task,
+            task,
             data,
             mode=LoopMode.THREAD_POOL,
         ).run()
+        assert len(results) == 4
         control_sample = self.control_sample()
         for num in results:
             assert num in control_sample

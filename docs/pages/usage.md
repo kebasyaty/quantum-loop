@@ -2,9 +2,9 @@
 from ql import QuantumLoop, count_qubits
 
 
-def task(item: int) -> int:
+def task(num: int) -> int | None:
     """Quantum."""
-    return item * item
+    return num * num if num % 2 == 0 else None
 
 
 def main() -> None:
@@ -14,9 +14,9 @@ def main() -> None:
 
     # Separation of the cycle into quantum algorithms for
     # multiprocessing data processing.
-    data = range(10)
+    data = range(1, 10)
     results = QuantumLoop(task, data).run()
-    print(results)  # => [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    print(results)  # => [4, 16, 36, 64]
 
 
 if __name__ == "__main__":

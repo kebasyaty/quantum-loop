@@ -12,11 +12,11 @@ but it is a concept of the principle of operation of quantum calculations on a r
 from __future__ import annotations
 
 __all__ = (
-    "LoopMode",
     "QuantumLoop",
+    "LoopMode",
     "count_qubits",
 )
 
 
-from ql.loop import LoopMode, QuantumLoop
-from ql.utils import count_qubits
+from ql.loop import QuantumLoop
+from ql.utils import LoopMode, count_qubits
