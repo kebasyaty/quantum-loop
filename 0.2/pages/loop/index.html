@@ -380,15 +380,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ql.loop.LoopMode" class="md-nav__link">
-    <span class="md-ellipsis">
-      LoopMode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ql.loop.QuantumLoop" class="md-nav__link">
     <span class="md-ellipsis">
       QuantumLoop
@@ -494,15 +485,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ql.loop.LoopMode" class="md-nav__link">
-    <span class="md-ellipsis">
-      LoopMode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ql.loop.QuantumLoop" class="md-nav__link">
     <span class="md-ellipsis">
       QuantumLoop
@@ -581,8 +563,6 @@ one iteration of a cycle in a separate processor thread.</p>
 but it is a concept of the principle of operation of quantum calculations on a regular computer.</p>
 <p>The module contains the following tools:</p>
 <ul>
-<li><code>LoopMode</code> - Quantum loop mode.</li>
-<li><code>count_qubits()</code> - Counting the number of conceptual qubits of your computer.</li>
 <li><code>QuantumLoop</code> - Separation of the cycle into quantum algorithms for multiprocessing data processing.</li>
 </ul>
 
@@ -604,66 +584,6 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 
 
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="ql.loop.LoopMode" class="doc doc-heading">
-            <code>LoopMode</code>
-
-
-<a href="#ql.loop.LoopMode" class="headerlink" title="Permanent link">&para;</a></h2>
-
-
-    <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="enum.Enum">Enum</span></code></p>
-
-
-        <p>Quantum loop mode.</p>
-
-
-
-
-
-
-
-
-              <details class="quote">
-                <summary>Source code in <code>src\ql\loop.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">LoopMode</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Quantum loop mode.&quot;&quot;&quot;</span>
-
-    <span class="n">PROCESS_POOL</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">THREAD_POOL</span> <span class="o">=</span> <span class="mi">2</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
 
 <div class="doc doc-object doc-class">
 
@@ -762,8 +682,8 @@ but it is a concept of the principle of operation of quantum calculations on a r
             </td>
             <td>
               <div class="doc-md-description">
-                <p>The maximum number of seconds to wait. If None, then there
-     is no limit on the wait time.</p>
+                <p>The number of seconds to wait for the result if the future isn't done.
+     If None, then there is no limit on the wait time.</p>
               </div>
             </td>
             <td>
@@ -772,28 +692,10 @@ but it is a concept of the principle of operation of quantum calculations on a r
           </tr>
           <tr class="doc-section-item">
             <td>
-                <code>chunksize</code>
-            </td>
-            <td>
-                  <code><span title="int">int</span></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>The size of the chunks the iterable will be broken into
-       before being passed to a child process. This argument is only
-       used by ProcessPoolExecutor; it is ignored by ThreadPoolExecutor.</p>
-              </div>
-            </td>
-            <td>
-                  <code>1</code>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td>
                 <code>mode</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="LoopMode (ql.loop.LoopMode)" href="#ql.loop.LoopMode">LoopMode</a></code>
+                  <code><a class="autorefs autorefs-internal" title="LoopMode (ql.utils.LoopMode)" href="../utils/#ql.utils.LoopMode">LoopMode</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -801,7 +703,7 @@ but it is a concept of the principle of operation of quantum calculations on a r
               </div>
             </td>
             <td>
-                  <code><span title="ql.loop.LoopMode.PROCESS_POOL">PROCESS_POOL</span></code>
+                  <code><span title="ql.utils.LoopMode.PROCESS_POOL">PROCESS_POOL</span></code>
             </td>
           </tr>
       </tbody>
@@ -816,7 +718,15 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
               <details class="quote">
                 <summary>Source code in <code>src\ql\loop.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 33</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
 <span class="normal"> 34</span>
 <span class="normal"> 35</span>
 <span class="normal"> 36</span>
@@ -884,18 +794,7 @@ but it is a concept of the principle of operation of quantum calculations on a r
 <span class="normal"> 98</span>
 <span class="normal"> 99</span>
 <span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">QuantumLoop</span><span class="p">:</span>
+<span class="normal">101</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">QuantumLoop</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Separation of the cycle into quantum algorithms for multiprocessing data processing.</span>
 
 <span class="sd">    Examples:</span>
@@ -912,11 +811,8 @@ but it is a concept of the principle of operation of quantum calculations on a r
 <span class="sd">        max_workers: The maximum number of processes that can be used to</span>
 <span class="sd">                     execute the given calls. If None or not given then as many</span>
 <span class="sd">                     worker processes will be created as the machine has processors.</span>
-<span class="sd">        timeout: The maximum number of seconds to wait. If None, then there</span>
-<span class="sd">                 is no limit on the wait time.</span>
-<span class="sd">        chunksize: The size of the chunks the iterable will be broken into</span>
-<span class="sd">                   before being passed to a child process. This argument is only</span>
-<span class="sd">                   used by ProcessPoolExecutor; it is ignored by ThreadPoolExecutor.</span>
+<span class="sd">        timeout: The number of seconds to wait for the result if the future isn&#39;t done.</span>
+<span class="sd">                 If None, then there is no limit on the wait time.</span>
 <span class="sd">        mode: The operating mode for a quantum loop: LoopMode.PROCESS_POOL | LoopMode.THREAD_POOL.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -926,43 +822,43 @@ but it is a concept of the principle of operation of quantum calculations on a r
         <span class="n">data</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Any</span><span class="p">],</span>
         <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">timeout</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-        <span class="n">chunksize</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
         <span class="n">mode</span><span class="p">:</span> <span class="n">LoopMode</span> <span class="o">=</span> <span class="n">LoopMode</span><span class="o">.</span><span class="n">PROCESS_POOL</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">quantum</span> <span class="o">=</span> <span class="n">task</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">task</span> <span class="o">=</span> <span class="n">task</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span> <span class="o">=</span> <span class="n">max_workers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="n">timeout</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">chunksize</span> <span class="o">=</span> <span class="n">chunksize</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">mode</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">process_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Better suitable for operations for which large processor resources are required.&quot;&quot;&quot;</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span>
+        <span class="n">results</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ProcessPoolExecutor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-            <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
-                <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">quantum</span><span class="p">,</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
-                    <span class="n">timeout</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span>
-                    <span class="n">chunksize</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chunksize</span><span class="p">,</span>
-                <span class="p">),</span>
-            <span class="p">)</span>
-        <span class="k">return</span> <span class="n">results</span>  <span class="c1"># noqa: RET504</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">future</span> <span class="o">=</span> <span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">results</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">thread_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;More suitable for tasks related to input-output</span>
 <span class="sd">        (for example, network queries, file operations),</span>
 <span class="sd">        where GIL is freed during input-output operations.&quot;&quot;&quot;</span>  <span class="c1"># noqa: D205, D209</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span>
+        <span class="n">results</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-            <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
-                <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">quantum</span><span class="p">,</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
-                    <span class="n">timeout</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span>
-                    <span class="n">chunksize</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chunksize</span><span class="p">,</span>
-                <span class="p">),</span>
-            <span class="p">)</span>
-        <span class="k">return</span> <span class="n">results</span>  <span class="c1"># noqa: RET504</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">future</span> <span class="o">=</span> <span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">results</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Run the quantum loop.&quot;&quot;&quot;</span>
@@ -1007,29 +903,31 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
             <details class="quote">
               <summary>Source code in <code>src\ql\loop.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Better suitable for operations for which large processor resources are required.&quot;&quot;&quot;</span>
+    <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+    <span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span>
+    <span class="n">results</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ProcessPoolExecutor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-        <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
-            <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">quantum</span><span class="p">,</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
-                <span class="n">timeout</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span>
-                <span class="n">chunksize</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chunksize</span><span class="p">,</span>
-            <span class="p">),</span>
-        <span class="p">)</span>
-    <span class="k">return</span> <span class="n">results</span>  <span class="c1"># noqa: RET504</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">future</span> <span class="o">=</span> <span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">results</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1052,17 +950,17 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
             <details class="quote">
               <summary>Source code in <code>src\ql\loop.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Run the quantum loop.&quot;&quot;&quot;</span>
     <span class="n">results</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">match</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
@@ -1097,33 +995,35 @@ where GIL is freed during input-output operations.</p>
 
             <details class="quote">
               <summary>Source code in <code>src\ql\loop.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">thread_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">thread_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;More suitable for tasks related to input-output</span>
 <span class="sd">    (for example, network queries, file operations),</span>
 <span class="sd">    where GIL is freed during input-output operations.&quot;&quot;&quot;</span>  <span class="c1"># noqa: D205, D209</span>
+    <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">task</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+    <span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span>
+    <span class="n">results</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-        <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
-            <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">quantum</span><span class="p">,</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
-                <span class="n">timeout</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span>
-                <span class="n">chunksize</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">chunksize</span><span class="p">,</span>
-            <span class="p">),</span>
-        <span class="p">)</span>
-    <span class="k">return</span> <span class="n">results</span>  <span class="c1"># noqa: RET504</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">future</span> <span class="o">=</span> <span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">results</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
