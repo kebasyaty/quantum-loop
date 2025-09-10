@@ -10,8 +10,6 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 The module contains the following tools:
 
-- `LoopMode` - Quantum loop mode.
-- `count_qubits()` - Counting the number of conceptual qubits of your computer.
 - `QuantumLoop` - Separation of the cycle into quantum algorithms for multiprocessing data processing.
 """
 
@@ -19,15 +17,9 @@ from __future__ import annotations
 
 import concurrent.futures
 from collections.abc import Callable, Iterable
-from enum import Enum
 from typing import Any, Never, assert_never
 
-
-class LoopMode(Enum):
-    """Quantum loop mode."""
-
-    PROCESS_POOL = 1
-    THREAD_POOL = 2
+from ql.utils import LoopMode
 
 
 class QuantumLoop:
@@ -47,11 +39,8 @@ class QuantumLoop:
         max_workers: The maximum number of processes that can be used to
                      execute the given calls. If None or not given then as many
                      worker processes will be created as the machine has processors.
-        timeout: The maximum number of seconds to wait. If None, then there
-                 is no limit on the wait time.
-        chunksize: The size of the chunks the iterable will be broken into
-                   before being passed to a child process. This argument is only
-                   used by ProcessPoolExecutor; it is ignored by ThreadPoolExecutor.
+        timeout: The number of seconds to wait for the result if the future isn't done.
+                 If None, then there is no limit on the wait time.
         mode: The operating mode for a quantum loop: LoopMode.PROCESS_POOL | LoopMode.THREAD_POOL.
     """
 
@@ -61,43 +50,43 @@ class QuantumLoop:
         data: Iterable[Any],
         max_workers: int | None = None,
         timeout: float | None = None,
-        chunksize: int = 1,
         mode: LoopMode = LoopMode.PROCESS_POOL,
     ) -> None:
-        self.quantum = task
+        self.task = task
         self.data = data
         self.max_workers = max_workers
         self.timeout = timeout
-        self.chunksize = chunksize
         self.mode = mode
 
     def process_pool(self) -> list[Any]:
         """Better suitable for operations for which large processor resources are required."""
+        task = self.task
+        data = self.data
+        timeout = self.timeout
+        results: list[Any] = []
         with concurrent.futures.ProcessPoolExecutor(self.max_workers) as executor:
-            results = list(
-                executor.map(
-                    self.quantum,
-                    self.data,
-                    timeout=self.timeout,
-                    chunksize=self.chunksize,
-                ),
-            )
-        return results  # noqa: RET504
+            for item in data:
+                future = executor.submit(task, item)
+                result = future.result(timeout)
+                if result is not None:
+                    results.append(result)
+        return results
 
     def thread_pool(self) -> list[Any]:
         """More suitable for tasks related to input-output
         (for example, network queries, file operations),
         where GIL is freed during input-output operations."""  # noqa: D205, D209
+        task = self.task
+        data = self.data
+        timeout = self.timeout
+        results: list[Any] = []
         with concurrent.futures.ThreadPoolExecutor(self.max_workers) as executor:
-            results = list(
-                executor.map(
-                    self.quantum,
-                    self.data,
-                    timeout=self.timeout,
-                    chunksize=self.chunksize,
-                ),
-            )
-        return results  # noqa: RET504
+            for item in data:
+                future = executor.submit(task, item)
+                result = future.result(timeout)
+                if result is not None:
+                    results.append(result)
+        return results
 
     def run(self) -> list[Any]:
         """Run the quantum loop."""
