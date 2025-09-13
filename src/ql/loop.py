@@ -27,11 +27,11 @@ class QuantumLoop:
 
     Examples:
         >>> from ql import QuantumLoop
-        >>> def task(item):
-        ... return item * item
-        >>> data = range(10)
+        >>> def task(num: int) -> int | None:
+        ... return num * num if num % 2 == 0 else None
+        >>> data = range(1, 10)
         >>> QuantumLoop(task, data).run()
-        [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+        [4, 16, 36, 64]
 
     Args:
         task: Function with a task algorithm.

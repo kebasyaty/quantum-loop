@@ -32,9 +32,19 @@
 
 <hr>
 
-::: ql
-    options:
-      members: no
+A set of tools for quantum calculations.
+<br>
+<br>
+A Qubit in a regular computer is quantum of algorithm that is executed in
+one iteration of a cycle in a separate processor thread.
+<br>
+<br>
+Quantum is a function with an algorithm of task for data processing.
+<br>
+<br>
+In this case, the Qubit is not a single information,
+<br>
+but it is a concept of the principle of operation of quantum calculations on a regular computer.
 
 <hr>
 
