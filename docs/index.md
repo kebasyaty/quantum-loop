@@ -29,22 +29,27 @@
       <a href="https://github.com/kebasyaty/quantum-loop"><img src="https://img.shields.io/github/last-commit/kebasyaty/quantum-loop/main" alt="Last commit"></a>
       <a href="https://github.com/kebasyaty/quantum-loop/releases/" alt="GitHub release"><img src="https://img.shields.io/github/release/kebasyaty/quantum-loop" alt="GitHub release"></a>
     </p>
-    <p align="center">
-      A set of tools for quantum calculations.
-      <br>
-      A Qubit in a regular computer is quantum of algorithm that is executed in
-      one iteration of a cycle in a separate processor thread.
-      <br>
-      Quantum is a function with an algorithm of task for data processing.
-      <br>
-      In this case, the Qubit is not a single information,
-      <br>
-      but it is a concept of the principle of operation of quantum calculations on a regular computer.
-    </p>
   </p>
 </div>
 
 <hr>
+
+<br>
+
+<p>
+A set of tools for quantum calculations.
+<br>
+A Qubit in a regular computer is quantum of algorithm that is executed in
+one iteration of a cycle in a separate processor thread.
+<br>
+<br>
+Quantum is a function with an algorithm of task for data processing.
+<br>
+<br>
+In this case, the Qubit is not a single information,
+<br>
+but it is a concept of the principle of operation of quantum calculations on a regular computer.
+</p>
 
 <br>
 
