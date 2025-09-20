@@ -1,6 +1,6 @@
 #### Count qubits
 
-```python
+```py title="main.py" linenums="1"
 from ql import count_qubits
 
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
 #### QuantumLoop - LoopMode.PROCESS_POOL
 
-```python
+```py title="main.py" linenums="1"
 from ql import QuantumLoop
 
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
 #### QuantumLoop - LoopMode.THREAD_POOL
 
-```python
+```py title="main.py" linenums="1"
 from pathlib import Path
 from ql import LoopMode, QuantumLoop
 

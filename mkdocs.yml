@@ -16,6 +16,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - content.code.copy
+    - content.code.select
     - search.suggest
     - search.highlight
     - search.share
@@ -53,6 +55,13 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra:
   version:
