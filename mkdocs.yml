@@ -16,10 +16,10 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - content.code.copy
     - search.suggest
     - search.highlight
     - search.share
+    - content.code.copy
     - navigation.tracking
     - navigation.sections
     - navigation.expand
