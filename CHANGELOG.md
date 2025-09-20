@@ -1,5 +1,9 @@
 ### CHANGELOG
 
+#### v0.2.3 2025-09-20
+
+- Updated dependencies.
+
 #### v0.2.1 2025-09-09
 
 - Updated documentation.
