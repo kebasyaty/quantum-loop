@@ -1,5 +1,9 @@
 ### CHANGELOG
 
+#### v0.2.5 2025-10-15
+
+- Added support `python 3.14`.
+
 #### v0.2.4 2025-09-20
 
 - Updated tests.
