@@ -12,26 +12,26 @@
         <meta name="author" content="Kebasyaty">
       
       
-        <link rel="canonical" href="https://kebasyaty.github.io/quantum-loop/">
+        <link rel="canonical" href="https://kebasyaty.github.io/quantum-loop/pages/utils/">
+      
+      
+        <link rel="prev" href="../loop/">
       
       
       
-        <link rel="next" href="pages/installation/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Quantum Loop Docs</title>
+        <title>Utils - Quantum Loop Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +50,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="custom_style/github_black.css">
+      <link rel="stylesheet" href="../../custom_style/github_black.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requirements" class="md-skip">
+        <a href="#ql.utils" class="md-skip">
           Skip to content
         </a>
       
@@ -93,12 +93,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the latest version.
-  <a href="../.">
+  <a href="../../..">
     <strong>Click here to go to latest.</strong>
   </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -110,7 +110,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Quantum Loop Docs" class="md-header__button md-logo" aria-label="Quantum Loop Docs" data-md-component="logo">
+    <a href="../.." title="Quantum Loop Docs" class="md-header__button md-logo" aria-label="Quantum Loop Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quantum Loop
+              Utils
             
           </span>
         </div>
@@ -227,7 +227,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Quantum Loop Docs" class="md-nav__button md-logo" aria-label="Quantum Loop Docs" data-md-component="logo">
+    <a href="../.." title="Quantum Loop Docs" class="md-nav__button md-logo" aria-label="Quantum Loop Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -254,30 +254,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Quantum Loop
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -288,51 +268,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changelog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Changelog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      License
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -344,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -366,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/usage/" class="md-nav__link">
+      <a href="../usage/" class="md-nav__link">
         
   
   
@@ -388,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/loop/" class="md-nav__link">
+      <a href="../loop/" class="md-nav__link">
         
   
   
@@ -407,10 +342,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="pages/utils/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Utils
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -421,6 +376,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ql.utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      utils
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ql.utils.LoopMode" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoopMode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ql.utils.count_qubits" class="md-nav__link">
+    <span class="md-ellipsis">
+      count_qubits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -450,27 +450,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#ql.utils" class="md-nav__link">
     <span class="md-ellipsis">
-      Requirements
+      utils
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#changelog" class="md-nav__link">
+  <a href="#ql.utils.LoopMode" class="md-nav__link">
     <span class="md-ellipsis">
-      Changelog
+      LoopMode
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#ql.utils.count_qubits" class="md-nav__link">
     <span class="md-ellipsis">
-      License
+      count_qubits
     </span>
   </a>
   
@@ -496,67 +496,197 @@
   
 
 
-  <h1>Quantum Loop</h1>
+  <h1>Utils</h1>
 
-<div align="center">
-  <p align="center">
-    <a href="https://github.com/kebasyaty/quantum-loop">
-      <img
-        height="100"
-        alt="Logo"
-        src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/main/assets/logo.svg">
-    </a>
-  </p>
-  <p>
-    <h3>A set of tools for quantum calculations.</h3>
-    <p align="center">
-      <a href="https://github.com/kebasyaty/quantum-loop/actions/workflows/test.yml" alt="Build Status"><img src="https://github.com/kebasyaty/quantum-loop/actions/workflows/test.yml/badge.svg" alt="Build Status"></a>
-      <a href="https://kebasyaty.github.io/quantum-loop/" alt="Docs"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Docs"></a>
-      <a href="https://pypi.python.org/pypi/quantum-loop/" alt="PyPI pyversions"><img src="https://img.shields.io/pypi/pyversions/quantum-loop.svg" alt="PyPI pyversions"></a>
-      <a href="https://pypi.python.org/pypi/quantum-loop/" alt="PyPI status"><img src="https://img.shields.io/pypi/status/quantum-loop.svg" alt="PyPI status"></a>
-      <a href="https://pypi.python.org/pypi/quantum-loop/" alt="PyPI version fury.io"><img src="https://badge.fury.io/py/quantum-loop.svg" alt="PyPI version fury.io"></a>
-      <br>
-      <a href="https://github.com/kebasyaty/quantum-loop/issues"><img src="https://img.shields.io/github/issues/kebasyaty/quantum-loop.svg" alt="GitHub issues"></a>
-      <a href="https://pepy.tech/projects/quantum-loop"><img src="https://static.pepy.tech/badge/quantum-loop" alt="PyPI Downloads"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE" alt="GitHub license"><img src="https://img.shields.io/github/license/kebasyaty/quantum-loop" alt="GitHub license"></a>
-      <a href="https://mypy-lang.org/" alt="Types: Mypy"><img src="https://img.shields.io/badge/types-Mypy-202235.svg?color=0c7ebf" alt="Types: Mypy"></a>
-      <a href="https://docs.astral.sh/ruff/" alt="Code style: Ruff"><img src="https://img.shields.io/badge/code%20style-Ruff-FDD835.svg" alt="Code style: Ruff"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop" alt="PyPI implementation"><img src="https://img.shields.io/pypi/implementation/quantum-loop" alt="PyPI implementation"></a>
-      <br>
-      <a href="https://pypi.org/project/quantum-loop"><img src="https://img.shields.io/pypi/format/quantum-loop" alt="Format"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop"><img src="https://img.shields.io/github/languages/top/kebasyaty/quantum-loop" alt="Top"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop"><img src="https://img.shields.io/github/repo-size/kebasyaty/quantum-loop" alt="Size"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop"><img src="https://img.shields.io/github/last-commit/kebasyaty/quantum-loop/main" alt="Last commit"></a>
-      <a href="https://github.com/kebasyaty/quantum-loop/releases/" alt="GitHub release"><img src="https://img.shields.io/github/release/kebasyaty/quantum-loop" alt="GitHub release"></a>
-    </p>
-  </p>
+<div class="doc doc-object doc-module">
+
+
+
+<a id="ql.utils"></a>
+    <div class="doc doc-contents first">
+
+        <p>Utils.</p>
+<p>The module contains the following tools:</p>
+<ul>
+<li><code>LoopMode</code> - Quantum loop mode.</li>
+<li><code>count_qubits()</code> - Counting the number of conceptual qubits of your computer.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="ql.utils.LoopMode" class="doc doc-heading">
+            <code>LoopMode</code>
+
+
+<a href="#ql.utils.LoopMode" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="enum.Enum">Enum</span></code></p>
+
+
+        <p>Quantum loop mode.</p>
+
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>src/ql/utils.py</code></summary>
+                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="k">class</span><span class="w"> </span><span class="nc">LoopMode</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Quantum loop mode.&quot;&quot;&quot;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="n">PROCESS_POOL</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">THREAD_POOL</span> <span class="o">=</span> <span class="mi">2</span>
+</span></code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
 </div>
 
-<hr>
 
-<p><br></p>
-<p>
-A set of tools for quantum calculations.
-<br>
-A Qubit in a regular computer is quantum of algorithm that is executed in
-one iteration of a cycle in a separate processor thread.
-<br>
-<br>
-Quantum is a function with an algorithm of task for data processing.
-<br>
-<br>
-In this case, the Qubit is not a single information,
-<br>
-but it is a concept of the principle of operation of quantum calculations on a regular computer.
-</p>
+<div class="doc doc-object doc-function">
 
-<p><br></p>
-<h4 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h4>
-<p><a href="https://github.com/kebasyaty/quantum-loop/blob/main/REQUIREMENTS.md" title="View the list of requirements.">View the list of requirements.</a></p>
-<h4 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h4>
-<p><a href="https://github.com/kebasyaty/quantum-loop/blob/main/CHANGELOG.md" title="Changelog">View the change history.</a></p>
-<h4 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h4>
-<p><em>This project is licensed under the</em> <a href="https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE" title="MIT">MIT</a>.</p>
+
+<h2 id="ql.utils.count_qubits" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">count_qubits</span><span class="p">()</span></code>
+
+<a href="#ql.utils.count_qubits" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Counting the number of conceptual qubits of your computer.</p>
+<p>Conceptual qubit is quantum of algorithm (task) that is executed in
+iterations of a cycle in a separate processor thread.</p>
+<p>Quantum of algorithm is a function for data processing.</p>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="language-pycon highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">ql</span><span class="w"> </span><span class="kn">import</span> <span class="n">count_qubits</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">&gt;&gt;&gt; </span><span class="n">count_qubits</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">16</span>
+</span></code></pre></div>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="int">int</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The number of conceptual qubits.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="quote">
+              <summary>Source code in <code>src/ql/utils.py</code></summary>
+              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="k">def</span><span class="w"> </span><span class="nf">count_qubits</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Counting the number of conceptual qubits of your computer.</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">    Conceptual qubit is quantum of algorithm (task) that is executed in</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">    iterations of a cycle in a separate processor thread.</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="sd">    Quantum of algorithm is a function for data processing.</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="sd">    Examples:</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="sd">        &gt;&gt;&gt; from ql import count_qubits</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="sd">        &gt;&gt;&gt; count_qubits()</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="sd">        16</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="sd">    Returns:</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="sd">        The number of conceptual qubits.</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="k">return</span> <span class="n">multiprocessing</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
@@ -593,22 +723,22 @@ but it is a concept of the principle of operation of quantum calculations on a r
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-        
           
-          <a href="pages/installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Installation
-              </div>
-            </div>
+          <a href="../loop/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Loop
+              </div>
             </div>
           </a>
+        
         
       </nav>
     
@@ -679,10 +809,10 @@ but it is a concept of the principle of operation of quantum calculations on a r
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "search.share", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
