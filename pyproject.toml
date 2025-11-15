@@ -1,6 +1,6 @@
 [project]
 name = "quantum-loop"
-version = "0.3.1"
+version = "0.3.2"
 description = "A set of tools for quantum calculations."
 readme = "README.md"
 authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
@@ -9,8 +9,8 @@ license-files = ["LICENSE"]
 requires-python = ">=3.12,<4.0"
 keywords = ["qubit", "quantum", "loop", "quantum-loop"]
 classifiers = [
-    "Development Status :: 4 - Beta",
-    # "Development Status :: 5 - Production/Stable",
+    # "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: MacOS :: MacOS X",
@@ -18,6 +18,9 @@ classifiers = [
     "Operating System :: POSIX",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
