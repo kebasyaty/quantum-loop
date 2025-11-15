@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.12,<4.0"
+requires-python = ">=3.9,<4.0"
 keywords = ["qubit", "quantum", "loop", "quantum-loop"]
 classifiers = [
     # "Development Status :: 4 - Beta",
