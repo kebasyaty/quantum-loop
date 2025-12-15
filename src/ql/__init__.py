@@ -13,8 +13,8 @@
 # """"YUMMM  "YMMMMMP"   "YMMMMMP"  YMMMb
 #
 # Copyright (c) 2025 Gennady Kostyunin
-# Defrag is free software under terms of the MIT License.
-# Repository https://github.com/kebasyaty/defrag
+# Quantum Loop is free software under terms of the MIT License.
+# Repository https://github.com/kebasyaty/quantum-loop
 #
 
 """A set of tools for quantum calculations.
