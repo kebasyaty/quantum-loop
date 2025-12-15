@@ -207,6 +207,7 @@ disable_error_code = [
     "func-returns-value",
     "union-attr",
     "import-not-found",
+    "untyped-decorator",
 ]
 
 [tool.pytest.ini_options]
