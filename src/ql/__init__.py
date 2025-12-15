@@ -12,6 +12,10 @@
 # o88oo,.__"888,_ _,88P"888,_ _,88P 888o
 # """"YUMMM  "YMMMMMP"   "YMMMMMP"  YMMMb
 #
+# Copyright (c) 2025 Gennady Kostyunin
+# Defrag is free software under terms of the MIT License.
+# Repository https://github.com/kebasyaty/defrag
+#
 
 """A set of tools for quantum calculations.
 
