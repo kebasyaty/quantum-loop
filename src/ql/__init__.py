@@ -17,7 +17,6 @@
 # Quantum Loop is free software under terms of the MIT License.
 # Repository https://github.com/kebasyaty/quantum-loop
 #
-
 """A set of tools for quantum calculations.
 
 A Qubit in a regular computer is quantum of algorithm that is executed in
