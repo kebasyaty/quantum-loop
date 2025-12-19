@@ -97,5 +97,5 @@ class QuantumLoop:
             case 2:
                 results = self.thread_pool()
             case _ as unreachable:
-                assert_never(Never(unreachable))
+                assert_never(Never(unreachable))  # pyrefly: ignore[not-callable]
         return results
