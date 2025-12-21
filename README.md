@@ -17,7 +17,7 @@
       <a href="https://pypi.python.org/pypi/quantum-loop/" alt="PyPI status"><img src="https://img.shields.io/pypi/status/quantum-loop.svg" alt="PyPI status"></a>
       <a href="https://pypi.python.org/pypi/quantum-loop/" alt="PyPI version fury.io"><img src="https://badge.fury.io/py/quantum-loop.svg" alt="PyPI version fury.io"></a>
       <br>
-      <a href="https://mypy-lang.org/" alt="Types: Mypy"><img src="https://img.shields.io/badge/types-Mypy-202235.svg?color=0c7ebf" alt="Types: Mypy"></a>
+      <a href="https://pyrefly.org/" alt="Types: Pyrefly"><img src="https://img.shields.io/badge/types-Pyrefly-FFB74D.svg" alt="Types: Pyrefly"></a>
       <a href="https://docs.astral.sh/ruff/" alt="Code style: Ruff"><img src="https://img.shields.io/badge/code%20style-Ruff-FDD835.svg" alt="Code style: Ruff"></a>
       <a href="https://pypi.org/project/quantum-loop"><img src="https://img.shields.io/pypi/format/quantum-loop" alt="Format"></a>
       <a href="https://pepy.tech/projects/quantum-loop"><img src="https://static.pepy.tech/badge/quantum-loop" alt="PyPI Downloads"></a>
