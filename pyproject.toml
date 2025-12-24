@@ -29,7 +29,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/kebasyaty/quantum-loop"
+Homepage = "https://kebasyaty.github.io/quantum-loop/"
 Repository = "https://github.com/kebasyaty/quantum-loop"
 Source = "https://github.com/kebasyaty/quantum-loop"
 "Bug Tracker" = "https://github.com/kebasyaty/quantum-loop/issues"
