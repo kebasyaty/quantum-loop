@@ -1,6 +1,6 @@
 [project]
 name = "quantum-loop"
-version = "0.3.4"
+version = "0.3.5"
 description = "A set of tools for quantum calculations."
 readme = "README.md"
 authors = [{ name = "kebasyaty", email = "kebasyaty@gmail.com" }]
@@ -16,6 +16,7 @@ classifiers = [
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.12",
