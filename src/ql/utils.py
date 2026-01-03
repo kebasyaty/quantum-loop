@@ -1,3 +1,7 @@
+# Quantum Loop - A set of tools for quantum calculations.
+# Copyright (c) 2025 Gennady Kostyunin
+# SPDX-License-Identifier: MIT
+#
 """Utils.
 
 The module contains the following tools:
