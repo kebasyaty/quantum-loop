@@ -1,3 +1,7 @@
+# Quantum Loop - A set of tools for quantum calculations.
+# Copyright (c) 2025 Gennady Kostyunin
+# SPDX-License-Identifier: MIT
+#
 """Utils.
 
 The module contains the following tools:
@@ -35,4 +39,4 @@ def count_qubits() -> int:
     Returns:
         The number of conceptual qubits.
     """
-    return multiprocessing.cpu_count()
+    return multiprocessing.cpu_count() - 1

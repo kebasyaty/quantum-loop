@@ -1,5 +1,12 @@
 ### CHANGELOG
 
+#### v0.3.6 2026-01-03
+
+- Fixed a `count_qubits` method.
+- Updated tests.
+- Updated documentation.
+- Updated README.md
+
 #### v0.2.5 2025-10-15
 
 - Added support `python 3.14`.

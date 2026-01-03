@@ -15,4 +15,4 @@ def test_loop_mode() -> None:
 
 def test_count_qubits() -> None:
     """Testing a count_qubits method."""
-    assert count_qubits() == multiprocessing.cpu_count()
+    assert count_qubits() == multiprocessing.cpu_count() - 1
