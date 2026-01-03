@@ -35,4 +35,4 @@ def count_qubits() -> int:
     Returns:
         The number of conceptual qubits.
     """
-    return multiprocessing.cpu_count()
+    return multiprocessing.cpu_count() - 1
