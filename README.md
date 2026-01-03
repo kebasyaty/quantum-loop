@@ -66,7 +66,7 @@ from ql import count_qubits
 def main() -> None:
     # Counting the number of conceptual qubits of your computer.
     num = count_qubits()
-    print(num)  # => 16
+    print(num)  # => 15
 
 
 if __name__ == "__main__":
