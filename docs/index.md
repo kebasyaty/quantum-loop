@@ -27,8 +27,6 @@
 
 <hr>
 
-<br>
-
 <p>
 A set of tools for quantum calculations.
 <br>
@@ -43,8 +41,6 @@ In this case, the Qubit is not a single information,
 <br>
 but it is a concept of the principle of operation of quantum calculations on a regular computer.
 </p>
-
-<br>
 
 #### Requirements
 
