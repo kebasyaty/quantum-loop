@@ -34,7 +34,7 @@ h6 {
   color: #becada;
 }
 .md-top:hover {
-  background-color: #00a897;
+  background-color: #009787;
   color: #becada;
 }
 
@@ -73,19 +73,19 @@ h6 {
 }
 
 .md-search__form {
-  background-color: #00463e;
+  background-color: #16504a;
   color: #becada;
 }
 .md-search__form:hover {
-  background-color: #00a897;
+  background-color: #009787;
 }
 
 [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
-  background-color: #00463e;
+  background-color: #16504a;
   color: #becada;
 }
 
-.md-search-result__meta {
+.md-search-result_meta {
   background-color: #303f53;
   color: #becada;
 }
