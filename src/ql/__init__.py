@@ -1,4 +1,3 @@
-#
 #  .::::::.    ...    :::  :::.   :::.    :::.::::::::::::...    :::.        :
 # ,;;'```';;,  ;;     ;;;  ;;`;;  `;;;;,  `;;;;;;;;;;;'''';;     ;;;;;,.    ;;;
 # [[[     [[[\[['     [[[ ,[[ '[[,  [[[[[. '[[     [[    [['     [[[[[[[, ,[[[[,
@@ -14,7 +13,6 @@
 #
 # Copyright (c) 2025 Gennady Kostyunin
 # SPDX-License-Identifier: MIT
-#
 """A set of tools for quantum calculations.
 
 A Qubit in a regular computer is quantum of algorithm that is executed in
