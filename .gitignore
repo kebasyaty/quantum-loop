@@ -31,11 +31,6 @@ coverage.xml
 # ruff
 .ruff_cache/
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
 # Editor directories and files
 .idea
 #.vscode
