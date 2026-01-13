@@ -25,6 +25,7 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     # "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
 dependencies = []
@@ -198,7 +199,7 @@ missing-attribute = false
 matches = "tests/**"
 
 [tool.pyrefly.sub-config.errors]
-
+missing-attribute = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
