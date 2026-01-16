@@ -30,11 +30,11 @@ h6 {
 }
 
 .md-top {
-  background-color: #005950;
+  background-color: #0125ed;
   color: #d1d7e0;
 }
 .md-top:hover {
-  background-color: #009787;
+  background-color: #1762fe;
   color: #d1d7e0;
 }
 
@@ -63,25 +63,25 @@ h6 {
 }
 
 .md-header {
-  background-color: #005950;
+  background-color: #0125ed;
   color: #d1d7e0;
 }
 
 .md-tabs {
-  background-color: #005950;
+  background-color: #0125ed;
   color: #d1d7e0;
 }
 
 .md-search__form {
-  background-color: #16504a;
+  background-color: #011fc6;
   color: #d1d7e0;
 }
 .md-search__form:hover {
-  background-color: #009787;
+  background-color: #1d3ffc;
 }
 
 [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
-  background-color: #16504a;
+  background-color: #011fc6;
   color: #d1d7e0;
 }
 
