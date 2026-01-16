@@ -33,7 +33,8 @@ theme:
     accent: blue
 
 extra_css:
-  - custom_style/github_black.css
+  - stylesheets/themes/github_black.css
+  - stylesheets/extra.css
 
 plugins:
   - search

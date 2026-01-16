@@ -2,7 +2,7 @@
   <p align="center">
     <a href="https://github.com/kebasyaty/quantum-loop">
       <img
-        height="100"
+        id="logo"
         alt="Logo"
         src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/main/assets/logo.svg">
     </a>
