@@ -735,7 +735,7 @@ wheels = [
 
 [[package]]
 name = "quantum-loop"
-version = "0.3.7"
+version = "0.3.8"
 source = { editable = "." }
 
 [package.dev-dependencies]

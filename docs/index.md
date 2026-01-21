@@ -44,12 +44,12 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 #### Requirements
 
-[View the list of requirements.](https://github.com/kebasyaty/quantum-loop/blob/main/REQUIREMENTS.md "View the list of requirements.")
+[![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements")
 
 #### Changelog
 
-[View the change history.](https://github.com/kebasyaty/quantum-loop/blob/main/CHANGELOG.md "Changelog")
+[![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog")
 
 #### License
 
-_This project is licensed under the_ [MIT](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT").
+[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/MIT-LICENSE "MIT")
