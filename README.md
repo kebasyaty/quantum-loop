@@ -137,5 +137,4 @@ if __name__ == "__main__":
 
 ## License
 
-This project is licensed under the [MIT](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT").
-[![GPL-3.0](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
+[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
