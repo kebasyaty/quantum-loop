@@ -43,11 +43,11 @@
 
 ## Documentation
 
-Online browsable documentation is available at [https://kebasyaty.github.io/quantum-loop/](https://kebasyaty.github.io/quantum-loop/ "Documentation").
+[![Documentation](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-documentation.svg "Documentation")](https://kebasyaty.github.io/quantum-loop/ "Documentation")
 
 ## Requirements
 
-[View the list of requirements](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements").
+[![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements")
 
 ## Installation
 
@@ -56,6 +56,8 @@ uv add quantum-loop
 ```
 
 ## Usage
+
+[![Examples](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-examples.svg "Examples")](https://kebasyaty.github.io/quantum-loop/latest/pages/usage/ "Examples")
 
 ```python
 """Count qubits."""
@@ -131,8 +133,9 @@ if __name__ == "__main__":
 
 ## Changelog
 
-[View the change history](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog").
+[![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog")
 
 ## License
 
 This project is licensed under the [MIT](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT").
+[![GPL-3.0](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
