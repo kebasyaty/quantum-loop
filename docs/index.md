@@ -52,4 +52,4 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 #### License
 
-[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/MIT-LICENSE "MIT")
+[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/link-mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
