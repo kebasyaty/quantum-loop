@@ -42,14 +42,10 @@ In this case, the Qubit is not a single information,
 but it is a concept of the principle of operation of quantum calculations on a regular computer.
 </p>
 
-#### Requirements
+<hr>
 
 [![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements")
 
-#### Changelog
-
 [![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog")
-
-#### License
 
 [![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")

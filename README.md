@@ -41,11 +41,7 @@
 
 <br>
 
-## Documentation
-
 [![Documentation](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/documentation.svg "Documentation")](https://kebasyaty.github.io/quantum-loop/ "Documentation")
-
-## Requirements
 
 [![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements")
 
@@ -131,10 +127,8 @@ if __name__ == "__main__":
     main()
 ```
 
-## Changelog
+<br>
 
 [![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog")
-
-## License
 
 [![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
