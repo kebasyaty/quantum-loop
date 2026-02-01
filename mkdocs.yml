@@ -1,8 +1,8 @@
 site_name: Quantum Loop Docs
 site_description: "A set of tools for quantum calculations."
 site_url: https://kebasyaty.github.io/quantum-loop/
-site_author: Kebasyaty
-copyright: Copyright &copy; 2025 Maintained by <a href="https://github.com/kebasyaty">Kebasyaty</a>
+site_author: kebasyaty
+copyright: Copyright &copy; 2025 Maintained by <a href="https://github.com/kebasyaty">kebasyaty</a>
 repo_name: kebasyaty/quantum-loop
 repo_url: https://github.com/kebasyaty/quantum-loop
 
