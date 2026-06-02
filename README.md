@@ -4,7 +4,7 @@
       <img
         height="80"
         alt="Logo"
-        src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/main/assets/logo.svg">
+        src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/logo.svg">
     </a>
   </p>
   <p>
