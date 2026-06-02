@@ -29,8 +29,8 @@ theme:
     - toc.follow
   palette:
     scheme: slate
-    primary: blue
-    accent: blue
+    primary: green
+    accent: green
 
 extra_css:
   - stylesheets/themes/github_black.css
