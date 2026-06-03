@@ -1,6 +1,6 @@
 [project]
 name = "quantum-loop"
-version = "0.4.0"
+version = "1.0.0"
 description = "A set of tools for quantum calculations."
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
@@ -22,7 +22,6 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
-  # "Programming Language :: Python :: Implementation :: PyPy",
   "Topic :: Software Development :: Libraries",
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Typing :: Typed",
@@ -31,7 +30,7 @@ dependencies = []
 
 [project.urls]
 "Bug Tracker" = "https://github.com/kebasyaty/quantum-loop/issues"
-Changelog = "https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md"
+Changelog = "https://github.com/kebasyaty/quantum-loop/blob/v1/CHANGELOG.md"
 Homepage = "https://kebasyaty.github.io/quantum-loop/"
 Repository = "https://github.com/kebasyaty/quantum-loop"
 Source = "https://github.com/kebasyaty/quantum-loop"

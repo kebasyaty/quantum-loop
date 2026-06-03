@@ -4,7 +4,7 @@
       <img
         id="logo"
         alt="Logo"
-        src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/logo.svg">
+        src="https://raw.githubusercontent.com/kebasyaty/quantum-loop/v1/assets/logo.svg">
     </a>
   </p>
   <p>
@@ -44,8 +44,8 @@ but it is a concept of the principle of operation of quantum calculations on a r
 
 <hr>
 
-[![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v0/REQUIREMENTS.md "Requirements")
+[![Requirements](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v1/assets/links/requirements.svg "Requirements")](https://github.com/kebasyaty/quantum-loop/blob/v1/REQUIREMENTS.md "Requirements")
 
-[![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md "Changelog")
+[![Changelog](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v1/assets/links/changelog.svg "Changelog")](https://github.com/kebasyaty/quantum-loop/blob/v1/CHANGELOG.md "Changelog")
 
-[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v0/assets/links/mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
+[![MIT](https://raw.githubusercontent.com/kebasyaty/quantum-loop/v1/assets/links/mit.svg "MIT")](https://github.com/kebasyaty/quantum-loop/blob/main/LICENSE "MIT")
