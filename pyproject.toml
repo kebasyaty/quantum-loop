@@ -30,7 +30,7 @@ dependencies = []
 
 [project.urls]
 "Bug Tracker" = "https://github.com/kebasyaty/quantum-loop/issues"
-Changelog = "https://github.com/kebasyaty/quantum-loop/blob/v0/CHANGELOG.md"
+Changelog = "https://github.com/kebasyaty/quantum-loop/blob/v1/CHANGELOG.md"
 Homepage = "https://kebasyaty.github.io/quantum-loop/"
 Repository = "https://github.com/kebasyaty/quantum-loop"
 Source = "https://github.com/kebasyaty/quantum-loop"
