@@ -1,6 +1,6 @@
 [project]
 name = "quantum-loop"
-version = "1.0.0"
+version = "1.0.1"
 description = "A set of tools for quantum calculations."
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
