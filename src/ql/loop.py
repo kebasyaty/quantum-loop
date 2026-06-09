@@ -18,8 +18,16 @@ The module contains the following tools:
 
 from __future__ import annotations
 
-import concurrent.futures
+__all__ = ("QuantumLoop",)
+
+
 from collections.abc import Callable, Iterable
+from concurrent.futures import (
+    Future,
+    ProcessPoolExecutor,
+    ThreadPoolExecutor,
+    as_completed,
+)
 from typing import Any, Never, assert_never
 
 from ql.utils import LoopMode
@@ -67,9 +75,9 @@ class QuantumLoop:
         data = self.data
         timeout = self.timeout
         results: list[Any] = []
-        with concurrent.futures.ProcessPoolExecutor(self.max_workers) as executor:
-            for item in data:
-                future = executor.submit(task, item)
+        with ProcessPoolExecutor(self.max_workers) as executor:
+            futures: list[Future] = [executor.submit(task, item) for item in data]
+            for future in as_completed(futures):
                 result = future.result(timeout)
                 if result is not None:
                     results.append(result)
@@ -83,9 +91,9 @@ class QuantumLoop:
         data = self.data
         timeout = self.timeout
         results: list[Any] = []
-        with concurrent.futures.ThreadPoolExecutor(self.max_workers) as executor:
-            for item in data:
-                future = executor.submit(task, item)
+        with ThreadPoolExecutor(self.max_workers) as executor:
+            futures: list[Future] = [executor.submit(task, item) for item in data]
+            for future in as_completed(futures):
                 result = future.result(timeout)
                 if result is not None:
                     results.append(result)
