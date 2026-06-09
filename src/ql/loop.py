@@ -76,8 +76,8 @@ class QuantumLoop:
         timeout = self.timeout
         results: list[Any] = []
         with ProcessPoolExecutor(self.max_workers) as executor:
-            for item in data:
-                future = executor.submit(task, item)
+            futures: list[Future] = [executor.submit(task, item) for item in data]
+            for future in as_completed(futures):
                 result = future.result(timeout)
                 if result is not None:
                     results.append(result)
